@@ -1,6 +1,7 @@
 node('JDK8') {
 	stage('SourceCode') {
-		git branch: 'sprint1_develop', url: 'https://github.com/mailrajeshsre/game-of-life.git'
+	//	git branch: 'sprint1_develop', url: 'https://github.com/mailrajeshsre/game-of-life.git'
+                checkout scm
        }
 
 	stage('Build the code') {
